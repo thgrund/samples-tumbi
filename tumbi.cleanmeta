@@ -1,0 +1,53 @@
+{
+  "copyright": "(c) 2021 Thomas Grund",
+  "description": "Tumbi samples - tuned to C with various attack styles, releases and harmonics",
+  "email": "info@mrreason.org",
+  "license": "CC0",
+  "maintainer": "thgrund",
+  "metadata-format": "clean-0.1",
+  "provenance": "Tumbi samples - tuned to C with various attack styles, releases and harmonics",
+  "shortname": "tumbi",
+  "sound_type": "sample",
+  "sounds": [
+    {
+      "description": "",
+      "filename": "00_c3_long_hard.wav",
+      "shortname": "00_c3_long_hard"
+    },
+    {
+      "description": "",
+      "filename": "01_c3_long_sharp.wav",
+      "shortname": "01_c3_long_sharp"
+    },
+    {
+      "description": "",
+      "filename": "02_c3_palm_muted.wav",
+      "shortname": "02_c3_palm_muted"
+    },
+    {
+      "description": "",
+      "filename": "03_c4_long_hard.wav",
+      "shortname": "03_c4_long_hard"
+    },
+    {
+      "description": "",
+      "filename": "04_c4_long_sharp.wav",
+      "shortname": "04_c4_long_sharp"
+    },
+    {
+      "description": "",
+      "filename": "05_c4_harmonic.wav",
+      "shortname": "05_c4_harmonic"
+    },
+    {
+      "description": "",
+      "filename": "06_c4_palm_muted.wav",
+      "shortname": "06_c4_palm_muted"
+    },
+    {
+      "description": "",
+      "filename": "07_c5_harmonic.wav",
+      "shortname": "07_c5_harmonic"
+    }
+  ]
+}
