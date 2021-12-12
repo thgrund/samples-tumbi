@@ -1,0 +1,25 @@
+setcps 0.54
+
+
+do
+let chords = "<f5'maj g'maj'4 e'min'<[a'sus4'4! a'min'4 a'sus2'4] \
+              \ [gs'dim'4! a'sus2'4 b'min'4 ]>>"
+d1 $ trigger 1 $ struct "<[t(5,8)]!8 [t*2]!8>" $ s "tumbi:1"
+   <| up (chords + "[4, -8]") # speed 0.5
+   # legato "<1>" # gain "0.8"
+d2 $ trigger 2 $ struct "t*4" $ s "fbass:0"
+  # up ("<f g e <a [gs! a b]>>" - 8) # legato 0.75
+d3 $ trigger 3 $ superimpose ((rev) . palindrome . (# pan 0.9))
+   $ while "<f!8 t!4 f!4>" (superimpose (# accelerate "[0.5|-0.5|1]"))
+   $ s "tumbi"
+   <| up ("<[f f <[[d f]*2 g] [~ c]>]!3 [a e d*<2 1> c]*2> " + 4)
+   # legato 1
+d4 $ trigger 4 $ while "<t!16 f!16>" (# silence)
+   $ arp "[up!2 down]" $ s "tumbi:6" # up (chords + 4) # pan 0.2
+d5 $ trigger 5 $ while "<t!4 f!4>" ((ply 2) . (slow 2) )
+   $ superimpose ((palindrome) . (# pan 0.2) . (# cutoff 2000))
+   $ superimpose ((slow 2) . (# pan 0.8) . (# cutoff 2000))
+   $ while "<f!12 t!4>" (superimpose (ply 2) )
+   $ jux (rev)
+   $ s "dr" <| n ("<25 ~> 26*2 <[27 28] 27> 28")
+   # legato 1
