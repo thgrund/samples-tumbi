@@ -11,4 +11,4 @@ These samples were developed with the intent to use in [TidalCycles](https://git
 - Audio Interface: Focusrite Scarlett 4i4
 - Instrument: Tumbi (also called Ektara which mean "one stringed")
 
-![tumbi-2](/Users/tgrund/Development/tidalcycles/samples-tumbi/tumbi-2.jpg)
+![tumbi-2](./tumbi-2.jpg)
